@@ -1,0 +1,13 @@
+@use "../../../scss/variabels.scss" as *;
+
+.footer_button {
+  height: fit-content;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  font-size: 0.7em;
+  font-weight: 550;
+  color: $componentsBg;
+  background-color: $font-prise;
+  padding: 15px;
+}

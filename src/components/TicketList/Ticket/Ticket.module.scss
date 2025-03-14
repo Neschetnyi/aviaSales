@@ -1,0 +1,48 @@
+@use "../../../scss/variabels.scss" as *;
+
+.container {
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  box-shadow: 1px 3px 10px $shadows;
+  border-radius: 5px;
+  background-color: $componentsBg;
+}
+
+.prise_logo_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.prise {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: $font-prise;
+  text-wrap: nowrap;
+}
+
+.onway_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.title {
+  text-wrap: nowrap;
+  color: $font-secondary;
+  font-size: 0.8em;
+}
+
+.details {
+  text-wrap: nowrap;
+  font-size: 0.8em;
+}
