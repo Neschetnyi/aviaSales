@@ -1,0 +1,10 @@
+@use "../../scss/variabels.scss" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: $font-main;
+  font-weight: 550;
+  font-size: 0.8em;
+}
