@@ -38,7 +38,7 @@ const SideFilter = () => {
   }, [all]);
 
   return (
-    <aside className={style.container}>
+    <div className={style.container}>
       <div className={style.div_header}>
         <p>КОЛИЧЕСТВО ПЕРЕСАДОК</p>
       </div>
@@ -89,7 +89,7 @@ const SideFilter = () => {
         />
         <span>3 пересадки</span>
       </div>
-    </aside>
+    </div>
   );
 };
 export default SideFilter;

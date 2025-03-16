@@ -2,7 +2,7 @@
 
 .container {
   font-family: "Open Sans", sans-serif;
-  width: 340px;
+  width: 25vw;
   height: 252px;
   padding: 0px;
   display: flex;
@@ -11,6 +11,20 @@
   box-shadow: 1px 3px 10px $shadows;
   border-radius: 5px;
   background-color: $componentsBg;
+  @media (max-width: 769px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 90%;
+    align-items: center;
+    height: fit-content;
+    padding: 0px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
 }
 .div_header {
   margin: 0;
@@ -18,16 +32,25 @@
   font-weight: 550;
   font-size: 0.8em;
   color: $font-main;
+  @media (max-width: 769px) {
+    width: 100%;
+    padding: 0;
+    padding-left: 15px;
+  }
 }
 
 .div {
   padding-left: 15px;
-  width: calc(100% - 15px);
+  //  width: calc(100% - 15px);
   font-weight: 100;
   font-size: 0.8em;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  @media (max-width: 769px) {
+    width: 40%;
+    padding-right: 10px;
+  }
 }
 
 .div:hover {

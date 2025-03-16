@@ -1,6 +1,6 @@
 import style from "./TopFilter.module.scss";
 import React from "react";
-import { /*useSelector*/ useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   toggle_Сheap_true,
   toggle_Сheap_false,
@@ -9,7 +9,6 @@ import {
   toggle_Optimal_true,
   toggle_Optimal_false,
 } from "../../../redux/topFilterSlice";
-// import { useEffect } from "react";
 
 const TopFilter = () => {
   const dispatch = useDispatch();

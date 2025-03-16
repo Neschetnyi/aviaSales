@@ -33,7 +33,6 @@ export const fetchTickets = createAsyncThunk(
     return axios
       .get(`https://aviasales-test-api.kata.academy/tickets?searchId=${id}`)
       .then((response) => {
-        console.log("fetch response", response.data);
         return [response.data.tickets, response.data.stop];
       })
       .catch((error) => {

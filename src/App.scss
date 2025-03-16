@@ -1,13 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 100vw;
   background-color: #f3f7fa;
   font-family: "Open Sans", sans-serif;
 }
 
-.main_container {
-  width: 600px;
+#root {
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+.main_container {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +34,9 @@ body {
 
 .main {
   display: flex;
+  @media (max-width: 769px) {
+    flex-direction: column;
+  }
 }
 
 .header {

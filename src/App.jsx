@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import SideFilter from "./components/SideFilter/SideFilter";
 import TicketList from "./components/TicketList/TicketList";
 import Loader from "./components/Loader/Loader";
