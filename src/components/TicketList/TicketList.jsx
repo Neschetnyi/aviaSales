@@ -147,17 +147,23 @@ const TicketList = () => {
     <div className={style.container}>
       <div>
         <TopFilter />
-        {lastfilteredTicketsShown.map((ticket, index) => {
-          return (
-            <Ticket
-              key={index}
-              price={ticket.price}
-              carrier={ticket.carrier}
-              forward={ticket.segments[0]}
-              backward={ticket.segments[1]}
-            />
-          );
-        })}
+        {lastfilteredTicketsShown.length === 0 ? (
+          <div className={style.alert}>
+            Рейсов, подходящих под заданные фильтры, не найдено
+          </div>
+        ) : (
+          lastfilteredTicketsShown.map((ticket, index) => {
+            return (
+              <Ticket
+                key={index}
+                price={ticket.price}
+                carrier={ticket.carrier}
+                forward={ticket.segments[0]}
+                backward={ticket.segments[1]}
+              />
+            );
+          })
+        )}
       </div>
       <Footer />
     </div>
