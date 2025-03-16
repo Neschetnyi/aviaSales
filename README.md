@@ -1,6 +1,6 @@
 сайт: https://neschetnyi.github.io/aviaSales/
 
 шаги:
-https://github.com/Neschetnyi/aviaSales/tree/layout
-https://github.com/Neschetnyi/aviaSales/tree/redux
-https://github.com/Neschetnyi/aviaSales/edit/master
+1) https://github.com/Neschetnyi/aviaSales/tree/layout
+2) https://github.com/Neschetnyi/aviaSales/tree/redux
+3) https://github.com/Neschetnyi/aviaSales/edit/master
