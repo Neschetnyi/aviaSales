@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/aviaSales/",
+  base: "https://github.com/Neschetnyi/aviaSales",
 });
